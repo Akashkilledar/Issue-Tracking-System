@@ -31,7 +31,7 @@ This is a **full-stack Issue Tracking System** built with:
 #### **Steps to Run Backend**
 ```bash
 # Clone the repository
-git clone https://github.com/your-repo/issue-tracker.git
+git clone https://github.com/Akashkilledar/Issue-Tracking-System.git
 cd issue-tracker/backend
 
 # Install dependencies
