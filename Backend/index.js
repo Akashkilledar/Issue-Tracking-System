@@ -1,6 +1,7 @@
 let express = require('express');
 let mongoose = require('mongoose');
 let bodyParser = require('body-parser');
+let cors = require('cors')
 
 
 mongoose.connect("mongodb://localhost:27017/wipras")
@@ -14,6 +15,7 @@ let app = express();
 app.use(express.json());
 app.use(bodyParser.json({limit:"50mb"}));
 app.use(bodyParser.urlencoded({limit:"50mb", extended:true}));
+app.use(cors());
 
 app.get('/',((req,res)=>{
     res.send("<h1>Server Running Successfully!!!!</h1>")
